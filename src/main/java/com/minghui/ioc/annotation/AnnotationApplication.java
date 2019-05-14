@@ -81,7 +81,7 @@ public class AnnotationApplication {
     private void initAttribute() throws IllegalAccessException {
         for (Object object : beanMap.values()) {
             Class<?> clazz = object.getClass();
-            //获取类的所有属性 
+            //获取类的所有属性
             Field[] fields = clazz.getDeclaredFields();
             //遍历属性，为有SelfResource注解的属性赋值
             for (Field field : fields) {
